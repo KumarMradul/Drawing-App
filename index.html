@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <canvas id="canvasPaint" onmouseover="paint()"></canvas>
+    <input type="color" id="colorPicker" onchange="changeColor(this)">
+    <input type="range" min="1" max="100" id="slider" onchange="changeWidth(this)">
+    <!-- <p>Select Pen Thickness</p> -->
+    <!-- <div class="button"> -->
+        <button id="clear" onclick="clearScreen()">Clear</button>
+        <button id="erasor" onclick="paint('false')">Erasor</button>
+    <!-- </div> -->
+</body>
+<script src="script.js"></script>
+</html>
